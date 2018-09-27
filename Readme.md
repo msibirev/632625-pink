@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Афонасьев](https://up.htmlacademy.ru/adaptive/15/user/632625).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Козлов](https://up.htmlacademy.ru/adaptive/15/user/27386).
 
 ---
 
