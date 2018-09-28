@@ -2,11 +2,131 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Главная страница «Пинк»</title>
   </head>
   <body>
+    <h1 class="visually-hidden">Главная страница</h1>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="logo">
+          <img src="http://placehold.it/150x100" alt="Логотип «Pink»">
+        </a>
+        <ul class="site-navigation uppercase">
+          <li><a href="#">Главная</a></li>
+          <li><a href="photo.html">Фотографии</a></li>
+          <li><a href="form.html">Конкурс</a></li>
+          <li><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
+        </ul>
+      </nav>
+      <button class="button main-header__button">Скачать приложение</button>
+      <section class="os-info">
+        <ul class="os-icons">
+          <li class="os-icons__item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="Изображение операционной системы «iOS/OS X»">
+            </a>
+          </li>
+          <li class="os-icons__item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="Изображение операционной системы «Android»">
+            </a>
+          </li>
+          <li class="os-icons__item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" alt="Изображение операционной системы «Windows»">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p class="main-header__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <section class="about-us">
+      <h2 class="visually-hidden">О нас</h2>
+      <div class="about-us__slogan">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </div>
+      <ul class="about-us__advantages">
+        <li class="advantages__item">
+          <p class="advantages__title">Поднимает настроение</p>
+          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__title">Меняет мир вокруг</p>
+          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__title">Заводит новых друзей</p>
+          <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
 
+    <section class="review">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <div class="review__item">
+        <p class="review__title">Лорем Ипсонович</p>
+        <p class="review__text">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, eos, et, magni porro nihil, corrupti corporis laudantium dolores odit deserunt eum culpa beatae. Recusandae quis officia sunt ipsam, quaerat facere.»</p>
+      </div>
+      <div class="review__item">
+        <p class="review__title">Николай Петров</p>
+        <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </div>
+      <div class="review__item">
+        <p class="review__title">Сергей Козлов</p>
+        <p class="review__text">«Как я сюда попал?!»</p>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="price__item">
+        <p class="title uppercase">База</p>
+        <p class="cost">1,99 USD</p>
+        <ul class="filter uppercase">
+          <li class="filter__item">Розовый фильтр</li>
+          <li class="filter__item">Смайлики</li>
+          <li class="filter__item">Комментарии</li>
+        </ul>
+      </div>
+      <div class="price__item">
+        <p class="title uppercase">Стандарт</p>
+        <p class="cost">3,99 USD</p>
+        <ul class="filter uppercase">
+          <li class="filter__item">Розовый фильтр</li>
+          <li class="filter__item">Смайлики</li>
+          <li class="filter__item">Комментарии</li>
+        </ul>
+      </div>
+      <div class="price__item">
+        <p class="title uppercase">Анлим</p>
+        <p class="cost">9,99 USD</p>
+        <ul class="filter uppercase">
+          <li class="filter__item">Розовый фильтр</li>
+          <li class="filter__item">Смайлики</li>
+          <li class="filter__item">Комментарии</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <p class="main-footer__slogan">Остались вопросы? Свяжитесь с нами!</p>
+      <section class="main-footer__contacts">
+        <div class="tel">
+          <p class="tel__title">Звоните:</p>
+          <a href="tel:+78125556666" class="tel__number">+7 (812) 555-66-66</a>
+        </div>
+        <div class="email">
+          <p class="email__title">Пишите:</p>
+          <a href="mailto:mail@htmlacademy.ru" class="email__text">mail@htmlacademy.ru</a>
+        </div>
+        <div class="address">
+          <p class="address__title">Приезжайте в гости:</p>
+          <p class="address__text">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </section>
+      <section class="map">
+      </section>
+    </footer>
   </body>
 </html>
