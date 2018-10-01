@@ -6,23 +6,25 @@
 </head>
 <body>
   <header class="alt-header">
-    <h1 class="alt-header__title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
     <nav class="main-navigation">
       <a class="logo" href="index.html">
         <img src="http://placehold.it/150x100" alt="Логотип «Pink»">
       </a>
-      <ul class="site-navigation">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="photo.html">Фотографии</a></li>
-        <li><a>Конкурс</a></li>
-        <li><a href="https://htmlacademy.ru/">Html Academy</a></li>
+      <div class="main-navigation__button site-button"></div>
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item"><a href="index.html">Главная</a></li>
+        <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+        <li class="site-list__item"><a>Конкурс</a></li>
+        <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
       </ul>
     </nav>
+    <h1 class="alt-header__title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
   </header>
 
   <section class="form">
     <h2 class="visually-hidden">Форма для участия</h2>
-    <p class="slogan">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+    <p class="slogan">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль
+      на&nbsp;вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
     <form class="questionary" action="https://echo.htmlacademy.ru" method="post" name="contest">
       <fieldset class="questionary__fullname">
         <label class="questionary__field" for="surname">Фамилия:</label>
@@ -73,7 +75,8 @@
       </fieldset>
       <fieldset class="questionary__report">
         <p class="questionary__title">Опишите свои эмоции</p>
-        <textarea class="questionary__field" name="report" placeholder="Можно прям в&nbsp;красках, не&nbsp;стесняясь в&nbsp;выражениях"></textarea>
+        <textarea class="questionary__field" name="report"
+                  placeholder="Можно прям в&nbsp;красках, не&nbsp;стесняясь в&nbsp;выражениях"></textarea>
       </fieldset>
       <button class="button questionary__button" type="submit">Отправить форму</button>
       <p class="questionary__text">* &mdash; обязательные поля</p>
@@ -85,16 +88,20 @@
       <img src="http://placehold.it/150x100" alt="Логотип «Pink»">
     </a>
     <ul class="socials">
-      <li class="socials__item"></li>
-      <li class="socials__item"></li>
-      <li class="socials__item"></li>
+      <li class="socials__item"><a class="socials__link" href="#"
+                                   aria-label="Иконка социальной сети «Twitter»"></a></li>
+      <li class="socials__item"><a class="socials__link" href="#"
+                                   aria-label="Иконка социальной сети «Facebook»"></a></li>
+      <li class="socials__item"><a class="socials__link" href="#"
+                                   aria-label="Иконка социальной сети «YouTube»"></a></li>
     </ul>
     <p class="alt-footer__copyright">Разработано</p>
   </footer>
 
   <div class="popup">
     <p class="popup__title">Ваша заявка отправлена</p>
-    <p class="popup__text">Спасибо за&nbsp;ваше участие, ваша заявка уже поступила к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;рассмотрим ее&nbsp;и&nbsp;оповестим вас.</p>
+    <p class="popup__text">Спасибо за&nbsp;ваше участие, ваша заявка уже поступила к&nbsp;нам.
+      В&nbsp;ближайшее время мы&nbsp;рассмотрим ее&nbsp;и&nbsp;оповестим вас.</p>
     <button class="button popup__button" type="button">Закрыть окно</button>
   </div>
 
