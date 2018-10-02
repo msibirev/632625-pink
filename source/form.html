@@ -10,7 +10,7 @@
       <a class="logo" href="index.html">
         <img src="http://placehold.it/150x100" alt="Логотип «Pink»">
       </a>
-      <div class="main-navigation__button site-button"></div>
+      <button class="main-navigation__button" type="button" aria-label="Кнопка открыть/закрыть меню"><span class="visually-hidden">Открыть/закрыть</span></button>
       <ul class="main-navigation__list site-list">
         <li class="site-list__item"><a href="index.html">Главная</a></li>
         <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
@@ -25,61 +25,71 @@
     <h2 class="visually-hidden">Форма для участия</h2>
     <p class="slogan">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль
       на&nbsp;вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-    <form class="questionary" action="https://echo.htmlacademy.ru" method="post" name="contest">
-      <fieldset class="questionary__fullname">
-        <label class="questionary__field" for="surname">Фамилия:</label>
-        <input class="questionary__item" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
-        <label class="questionary__field" for="name">Имя:</label>
-        <input class="questionary__item" id="name" type="text" name="name" placeholder="Введите ваше имя *">
-        <label class="questionary__field" for="patronymic">Отчество:</label>
-        <input class="questionary__item" id="patronymic" type="text" name="partonymic" placeholder="Ну и отчество тоже">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post" name="contest">
+      <fieldset class="form__text-item">
+        <div class="form__item">
+          <label class="form__field" for="surname">Фамилия:</label>
+          <input class="form__text" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
+        </div>
+        <div class="form__item">
+          <label class="form__field" for="name">Имя:</label>
+          <input class="form__text" id="name" type="text" name="name" placeholder="Введите ваше имя *">
+        </div>
+        <div class="form__item">
+          <label class="form__field" for="patronymic">Отчество:</label>
+          <input class="form__text" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+        </div>
       </fieldset>
-      <fieldset class="questionary__achievements">
-        <p class="questionary__title">Ваши безбашенные достижения в&nbsp;путешествии</p>
+      <fieldset class="form__checkbox-item">
+        <legend class="form__title">Ваши безбашенные достижения в&nbsp;путешествии</legend>
         <label>
-          <input class="questionary__item" type="checkbox" name="achievement" checked>Сделал селфи с&nbsp;акулой
+          <input class="form__checkbox" type="checkbox" name="achievement" value="checkbox-button" checked><span>Сделал селфи с&nbsp;акулой</span>
         </label>
         <label>
-          <input class="questionary__item" type="checkbox" name="achievement" checked>Обгорел на&nbsp;пляже
+          <input class="form__checkbox" type="checkbox" name="achievement" value="checkbox-button" checked><span>Обгорел на&nbsp;пляже</span>
         </label>
         <label>
-          <input class="questionary__item" type="checkbox" name="achievement">Видел Чака Норриса
+          <input class="form__checkbox" type="checkbox" name="achievement" value="checkbox-button"><span>Видел Чака Норриса</span>
         </label>
         <label>
-          <input class="questionary__item" type="checkbox" name="achievement">Накупил сувениров
+          <input class="form__checkbox" type="checkbox" name="achievement" value="checkbox-button"><span>Накупил сувениров</span>
         </label>
         <label>
-          <input class="questionary__item" type="checkbox" name="achievement" checked>Удержал башню
+          <input class="form__checkbox" type="checkbox" name="achievement" value="checkbox-button" checked><span>Удержал башню</span>
         </label>
         <label>
-          <input class="questionary__item" type="checkbox" name="achievement">Разгромил отель
-        </label>
-      </fieldset>
-      <fieldset class="questionary__contacts">
-        <label class="questionary__field" for="tel">Номер телефона</label>
-        <input class="questionary__item" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
-        <label class="questionary__field" for="email">Адрес почты</label>
-        <input class="questionary__item" id="email" type="email" name="email" placeholder="Введите почту *">
-      </fieldset>
-      <fieldset class="questionary__apps">
-        <p class="questionary__title">С&nbsp;каким приложением путешествовали?</p>
-        <label>
-          <input class="questionary__item" type="radio" name="app" checked>Pink для iOS
-        </label>
-        <label>
-          <input class="questionary__item" type="radio" name="app">Pink на&nbsp;Android
-        </label>
-        <label>
-          <input class="questionary__item" type="radio" name="app">Windows Phone
+          <input class="form__checkbox" type="checkbox" name="achievement" value="checkbox-button"><span>Разгромил отель</span>
         </label>
       </fieldset>
-      <fieldset class="questionary__report">
-        <p class="questionary__title">Опишите свои эмоции</p>
-        <textarea class="questionary__field" name="report"
+      <fieldset class="form__text-item">
+        <div class="form__item">
+         <label class="form__field" for="tel">Номер телефона</label>
+         <input class="form__text" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="form__item">
+          <label class="form__field" for="email">Адрес почты</label>
+          <input class="form__text" id="email" type="email" name="email" placeholder="Введите почту *">
+        </div>dd dl webref
+      </fieldset>
+      <fieldset class="form__radio-item">
+        <p class="form__title">С&nbsp;каким приложением путешествовали?</p>
+        <label>
+          <input class="form__radio" type="radio" name="app" value="radio-button" checked><span>Pink для iOS</span>
+        </label>
+        <label>
+          <input class="form__radio" type="radio" name="app" value="radio-button"><span>Pink на&nbsp;Android</span>
+        </label>
+        <label>
+          <input class="form__radio" type="radio" name="app" value="radio-button"><span>Windows Phone</span>
+        </label>
+      </fieldset>
+      <fieldset class="form__textarea-item">
+        <p class="form__title">Опишите свои эмоции</p>
+        <textarea class="form__textarea" name="report"
                   placeholder="Можно прям в&nbsp;красках, не&nbsp;стесняясь в&nbsp;выражениях"></textarea>
       </fieldset>
-      <button class="button questionary__button" type="submit">Отправить форму</button>
-      <p class="questionary__text">* &mdash; обязательные поля</p>
+      <button class="button form__button" type="submit">Отправить форму</button>
+      <p class="form__text">* &mdash; обязательные поля</p>
     </form>
   </section>
 
