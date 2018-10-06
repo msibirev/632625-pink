@@ -1,161 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Главная страница «Пинк»</title>
-  </head>
-  <body>
-    <h1 class="visually-hidden">Главная страница</h1>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="logo">
-          <img src="http://placehold.it/150x100" alt="Логотип «Pink»">
-        </a>
-        <button class="main-navigation__button" type="button" aria-label="Кнопка открыть/закрыть меню"><span class="visually-hidden">Открыть/закрыть</span></button>
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item"><a>Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
+
+<head>
+  <meta charset="utf-8">
+  <title>Главная страница «Пинк»</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="main-body">
+  <h1 class="visually-hidden">Главная страница</h1>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="logo">
+        <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип «Pink»">
+      </a>
+      <button class="main-navigation__button" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item"><a>Главная</a></li>
+        <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+        <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+        <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
+      </ul>
+    </nav>
+    <section class="download-information">
+      <a class="button download-information__button" href="#">Скачать приложение</a>
+      <ul class="download-information__icons os-icons">
+        <li class="os-icons__item os-icons__item--apple">
+          <a href="#" aria-label="Изображение операционной системы «iOS/OS X»"></a>
+        </li>
+        <li class="os-icons__item os-icons__item--android">
+          <a href="#" aria-label="Изображение операционной системы «Android»"></a>
+        </li>
+        <li class="os-icons__item os-icons__item--microsoft">
+          <a href="#" aria-label="Изображение операционной системы «Windows»"></a>
+        </li>
+      </ul>
+      <p class="download-information__text">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X,
+        Windows&nbsp;8</p>
+    </section>
+  </header>
+
+  <main class="main-content">
+    <section class="about-us">
+      <h2 class="visually-hidden">О нас</h2>
+      <div class="about-us__slogan">
+        <p class="about-us__text">Устали от&nbsp;серости мегаполиса?</p>
+        <p class="about-us__text">Нам есть, что вам предложить!</p>
+      </div>
+      <ul class="about-us__advantages advantages-list">
+        <li class="advantages-list__item">
+          <p class="advantages-list__title">Поднимает настроение</p>
+          <p class="advantages-list__text">Приложение позволит вам победить осеннюю хандру и&nbsp;
+            депрессию буквально в&nbsp;несколько кликов!</p>
+        </li>
+        <li class="advantages-list__item">
+          <p class="advantages-list__title">Меняет мир вокруг</p>
+          <p class="advantages-list__text">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью,
+            чтобы усилить эффект</p>
+        </li>
+        <li class="advantages-list__item">
+          <p class="advantages-list__title">Заводит новых друзей</p>
+          <p class="advantages-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и&nbsp;
+            заводите новых</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="review">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <div class="review__list">
+        <blockquote class="review__item">
+          <cite class="review__title">Лорем Ипсонович</cite>
+          <p class="review__text">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, eos, et,
+            magni porro nihil, corrupti corporis laudantium dolores odit deserunt eum
+            culpa beatae. Recusandae quis officia sunt ipsam, quaerat facere.»</p>
+        </blockquote>
+        <blockquote class="review__item">
+          <cite class="review__title">Николай Петров</cite>
+          <p class="review__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому
+            взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей
+            женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+        </blockquote>
+        <blockquote class="review__item">
+          <cite class="review__title">Сергей Козлов</cite>
+          <p class="review__text">«Как я сюда попал?!»</p>
+        </blockquote>
+      </div>
+      <div class="slider">
+        <p class="slider__toggles-wrapper">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="price__item">
+        <div class="price__text-fields">
+          <p class="price__title">База</p>
+          <p class="price__cost">1,99 USD</p>
+        </div>
+        <ul class="price__list">
+          <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
+          <li class="price__list-item price__list-item--unsupported">Смайлики <span class="visually-hidden">(Не
+              поддерживается)</span></li>
+          <li class="price__list-item price__list-item--unsupported">Комментарии <span class="visually-hidden">(Не
+              поддерживается)</span></li>
         </ul>
-      </nav>
-      <section class="download-information">
-        <a class="button download-information__button" href="#">Скачать приложение</a>
-        <ul class="download-information__icons os-icons">
-          <li class="os-icons__item">
-            <a href="#" aria-label="Изображение операционной системы «iOS/OS X»"></a>
-          </li>
-          <li class="os-icons__item">
-            <a href="#" aria-label="Изображение операционной системы «Android»"></a>
-          </li>
-          <li class="os-icons__item">
-            <a href="#" aria-label="Изображение операционной системы «Windows»"></a>
-          </li>
+      </div>
+      <div class="price__item">
+        <div class="price__text-fields">
+          <p class="price__title">Стандарт</p>
+          <span class="price__text">Хит</span>
+          <p class="price__cost">3,99 USD</p>
+        </div>
+        <ul class="price__list">
+          <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
+          <li class="price__list-item price__list-item--supported">Смайлики <span class="visually-hidden">(Поддерживается)</span></li>
+          <li class="price__list-item price__list-item--unsupported">Комментарии <span class="visually-hidden">(Не
+              поддерживается)</span></li>
         </ul>
-        <p class="download-information__text">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows&nbsp;8</p>
-      </section>
-    </header>
-
-    <main class="main-content">
-      <section class="about-us">
-        <h2 class="visually-hidden">О нас</h2>
-        <div class="about-us__slogan">
-          <p class="about-us__text">Устали от&nbsp;серости мегаполиса?</p>
-          <p class="about-us__text">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="price__item">
+        <div class="price__text-fields">
+          <p class="price__title">Анлим</p>
+          <p class="price__cost">9,99 USD</p>
         </div>
-        <ul class="about-us__advantages advantages-list">
-          <li class="advantages-list__item">
-            <p class="advantages-list__title">Поднимает настроение</p>
-            <p class="advantages-list__text">Приложение позволит вам победить осеннюю хандру и&nbsp;
-              депрессию буквально в&nbsp;несколько кликов!</p>
-          </li>
-          <li class="advantages-list__item">
-            <p class="advantages-list__title">Меняет мир вокруг</p>
-            <p class="advantages-list__text">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью,
-              чтобы усилить эффект</p>
-          </li>
-          <li class="advantages-list__item">
-            <p class="advantages-list__title">Заводит новых друзей</p>
-            <p class="advantages-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и&nbsp;
-              заводите новых</p>
-          </li>
+        <ul class="price__list">
+          <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
+          <li class="price__list-item price__list-item--supported">Смайлики <span class="visually-hidden">(Поддерживается)</span></li>
+          <li class="price__list-item price__list-item--supported">Комментарии <span class="visually-hidden">(Поддерживается)</span></li>
         </ul>
-      </section>
+      </div>
+      <div class="slider">
+        <p class="slider__toggles-wrapper">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+  </main>
 
-      <section class="review">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <div class="review__list">
-          <blockquote class="review__item">
-            <cite class="review__title">Лорем Ипсонович</cite>
-            <p class="review__text">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, eos, et,
-              magni porro nihil, corrupti corporis laudantium dolores odit deserunt eum
-              culpa beatae. Recusandae quis officia sunt ipsam, quaerat facere.»</p>
-          </blockquote>
-          <blockquote class="review__item">
-            <cite class="review__title">Николай Петров</cite>
-            <p class="review__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому
-              взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей
-              женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
-          </blockquote>
-          <blockquote class="review__item">
-            <cite class="review__title">Сергей Козлов</cite>
-            <p class="review__text">«Как я сюда попал?!»</p>
-          </blockquote>
+  <footer class="main-footer">
+    <p class="main-footer__slogan">Остались вопросы? Свяжитесь с&nbsp;нами!</p>
+    <section class="contacts">
+      <dl class="contacts__list">
+        <div class="contacts__item">
+          <dt class="contacts__title">Звоните:</dt>
+          <dd class="contacts__text"><a href="tel:+78125556666">+7 (812) 555-66-66</a></dd>
         </div>
-        <div class="slider">
-          <p class="slider__toggles-wrapper">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+        <div class="contacts__item">
+          <dt class="contacts__title">Пишите:</dt>
+          <dd class="contacts__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></dd>
         </div>
-      </section>
+        <div class="contacts__item">
+          <dt class="contacts__title">Приезжайте в&nbsp;гости:</dt>
+          <dd class="contacts__text">ул. Большая Конюшенная, 19/8</dd>
+        </div>
+      </dl>
+    </section>
+    <section class="map">
+    </section>
+  </footer>
+</body>
 
-      <section class="price">
-        <div class="price__item">
-          <div class="price__text-fields">
-            <p class="price__title">База</p>
-            <p class="price__cost">1,99 USD</p>
-          </div>
-          <ul class="price__list">
-            <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
-            <li class="price__list-item price__list-item--unsupported">Смайлики <span class="visually-hidden">(Не поддерживается)</span></li>
-            <li class="price__list-item price__list-item--unsupported">Комментарии <span class="visually-hidden">(Не поддерживается)</span></li>
-          </ul>
-        </div>
-        <div class="price__item">
-          <div class="price__text-fields">
-            <p class="price__title">Стандарт</p>
-            <span class="price__text">Хит</span>
-            <p class="price__cost">3,99 USD</p>
-          </div>
-          <ul class="price__list">
-            <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
-            <li class="price__list-item price__list-item--supported">Смайлики <span class="visually-hidden">(Поддерживается)</span></li>
-            <li class="price__list-item price__list-item--unsupported">Комментарии <span class="visually-hidden">(Не поддерживается)</span></li>
-          </ul>
-        </div>
-        <div class="price__item">
-          <div class="price__text-fields">
-           <p class="price__title">Анлим</p>
-           <p class="price__cost">9,99 USD</p>
-          </div>
-          <ul class="price__list">
-            <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
-            <li class="price__list-item price__list-item--supported">Смайлики <span class="visually-hidden">(Поддерживается)</span></li>
-            <li class="price__list-item price__list-item--supported">Комментарии <span class="visually-hidden">(Поддерживается)</span></li>
-          </ul>
-        </div>
-        <div class="slider">
-          <p class="slider__toggles-wrapper">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="main-footer">
-      <p class="main-footer__slogan">Остались вопросы? Свяжитесь с&nbsp;нами!</p>
-      <section class="contacts">
-        <dl class="contacts__list">
-          <div class="contacts__item">
-            <dt class="contacts__title">Звоните:</dt>
-            <dd><a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a></dd>
-          </div>
-          <div class="contacts__item">
-            <dt class="contacts__title">Пишите:</dt>
-            <dd><a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></dd>
-          </div>
-          <div class="contacts__item">
-            <dt class="contacts__title">Приезжайте в&nbsp;гости:</dt>
-            <dd class="contacts__text">ул. Большая Конюшенная, 19/8</dd>
-          </div>
-        </dl>
-      </section>
-      <section class="map">
-      </section>
-    </footer>
-  </body>
 </html>
