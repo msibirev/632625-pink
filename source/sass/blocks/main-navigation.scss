@@ -1,3 +1,13 @@
 .main-navigation__list {
   background-color: #283645;
+  padding: 0;
+  text-align: center;
+}
+
+.main-navigation__button {
+  background-color: transparent;
+  border: none;
+  background-image: url("../../img/icon-menu-burger.svg");
+  width: 50px;
+  height: 24px;
 }

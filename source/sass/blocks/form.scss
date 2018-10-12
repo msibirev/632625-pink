@@ -8,25 +8,30 @@
   background-color: #f2f2f2;
 }
 
-.form__set-title,
+.form__set-title {
+  color: #d22856;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
 .form__note-symbol {
   color: #d22856;
-  line-height: 30px;
+  line-height: 2.14;
   text-transform: uppercase;
 }
 
 .form__note {
-  line-height: 30px;
+  line-height: 2.14;
   text-transform: uppercase;
 }
 
 .form__submit {
   border-color: #2aab6d;
-  border-radius: 0px;
+  border-radius: 0;
   background-color: #2aab6d;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.67;
   text-transform: uppercase;
 }

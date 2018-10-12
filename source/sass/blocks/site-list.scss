@@ -5,8 +5,12 @@
   text-transform: uppercase;
 }
 
-.site-list__item,
-.site-list__item a {
+.site-list__item {
   color: #ffffff;
   list-style: none;
+}
+
+.site-list__item a {
+  color: #ffffff;
+  text-decoration: none;
 }

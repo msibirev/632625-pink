@@ -3,23 +3,21 @@
   justify-content: space-around;
 }
 
-.os-icons__item--apple {
-  background-image: url(../../img/logo-apple.svg);
-  background-repeat: no-repeat;
-  width: 47px;
-  height: 56px;
-}
 
-.os-icons__item--android {
-  background-image: url(../../img/logo-android.svg);
+.os-icons__item {
   background-repeat: no-repeat;
   width: 47px;
   height: 56px;
-}
 
-.os-icons__item--microsoft {
-  background-image: url(../../img/logo-microsoft.svg);
-  background-repeat: no-repeat;
-  width: 47px;
-  height: 56px;
+  &--apple {
+    background-image: url("../../img/logo-apple.svg");
+  }
+
+  &--android {
+    background-image: url("../../img/logo-android.svg");
+  }
+
+  &--microsoft {
+    background-image: url("../../img/logo-microsoft.svg");
+  }
 }

@@ -7,7 +7,7 @@
   border-color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 1;
   padding-top: 20px;
   padding-bottom: 17px;
   padding-left: 40px;
@@ -16,10 +16,11 @@
 
 .download-information__icons {
   list-style: none;
+  padding: 0;
 }
 
 .download-information__text {
   color: #ffffff;
-  line-height: 24px;
+  line-height: 1.71;
   text-align: center;
 }

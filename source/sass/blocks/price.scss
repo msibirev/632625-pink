@@ -3,28 +3,40 @@
 }
 
 .price__text-fields {
+  padding-top: 23px;
+  padding-bottom: 23px;
   background-color: #283645;
   color: #ffffff;
   line-height: 30px;
   text-transform: uppercase;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+
+  &--hit {
+    background-image: url("../../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: 74px 73px;
+  }
 }
 
 .price__title {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+  line-height: 1.67;
+  margin: 0;
 }
 
 .price__text {
-  line-height: 21.21px;
-  font-size: 10px;
-  background-image: url(../../img/bg-hit.svg);
+  line-height: 2.12;
 }
 
 .price__cost {
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+  line-height: 1.25;
+  margin: 0;
 }
 
 
@@ -35,18 +47,25 @@
   color: #283645;
   background-color: #ffffff;
   padding-left: 0;
+  margin: 0;
 }
 
 .price__list-item {
-  border: 2px solid #e5e5e5;
-}
-
-.price__list-item--supported {
-  background-image: url(../../img/icon-yes.svg);
+  padding: 22px;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
   background-repeat: no-repeat;
-}
+  background-position-x: 270px;
+  background-position-y: center;
 
-.price__list-item--unsupported {
-  background-image: url(../../img/icon-no.svg);
-  background-repeat: no-repeat;
+  &--supported {
+    background-image: url("../../img/icon-yes.svg");
+    background-size: 31px 21px;
+  }
+
+  &--unsupported {
+    background-image: url("../../img/icon-no.svg");
+    background-size: 27px 26px;
+  }
 }

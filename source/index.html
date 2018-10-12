@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная страница «Пинк»</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +13,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="logo">
-        <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="Логотип «Pink»">
+        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип «Pink»">
       </a>
       <button class="main-navigation__button" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
       <ul class="main-navigation__list site-list">
@@ -23,6 +24,7 @@
       </ul>
     </nav>
     <section class="download-information">
+        <h2 class="visually-hidden">Информация о скачивании</h2>
       <a class="button download-information__button" href="#">Скачать приложение</a>
       <ul class="download-information__icons os-icons">
         <li class="os-icons__item os-icons__item--apple">
@@ -87,54 +89,57 @@
         </blockquote>
       </div>
       <p class="slider__toggles-wrapper">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle slider__toggle--active" type="button" aria-label="Первая карточка"></button>
+        <button class="slider__toggle" type="button" aria-label="Вторая карточка"></button>
+        <button class="slider__toggle" type="button" aria-label="Третья карточка"></button>
       </p>
     </section>
 
     <section class="price slider">
-      <div class="price__item slider__item">
-        <div class="price__text-fields">
-          <p class="price__title">База</p>
-          <p class="price__cost">1,99 USD</p>
+      <h2 class="visually-hidden">Информация о подписке</h2>
+      <div class="price__item-wrapper">
+        <div class="price__item slider__item">
+          <div class="price__text-fields">
+            <p class="price__title">База</p>
+            <p class="price__cost">1,99 USD</p>
+          </div>
+          <ul class="price__list slider__list">
+            <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--unsupported">Смайлики <span class="visually-hidden">(Не
+                поддерживается)</span></li>
+            <li class="price__list-item price__list-item--unsupported">Комментарии <span class="visually-hidden">(Не
+                поддерживается)</span></li>
+          </ul>
         </div>
-        <ul class="price__list slider__list">
-          <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
-          <li class="price__list-item price__list-item--unsupported">Смайлики <span class="visually-hidden">(Не
-              поддерживается)</span></li>
-          <li class="price__list-item price__list-item--unsupported">Комментарии <span class="visually-hidden">(Не
-              поддерживается)</span></li>
-        </ul>
-      </div>
-      <div class="price__item slider__item">
-        <div class="price__text-fields">
-          <p class="price__title">Стандарт</p>
-          <span class="price__text">Хит</span>
-          <p class="price__cost">3,99 USD</p>
+        <div class="price__item slider__item price__item">
+          <div class="price__text-fields price__text-fields--hit">
+            <p class="price__title">Стандарт</p>
+            <div class="price__text">Хит</div>
+            <p class="price__cost">3,99 USD</p>
+          </div>
+          <ul class="price__list slider__list">
+            <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--supported">Смайлики <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--unsupported">Комментарии <span class="visually-hidden">(Не
+                поддерживается)</span></li>
+          </ul>
         </div>
-        <ul class="price__list slider__list">
-          <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
-          <li class="price__list-item price__list-item--supported">Смайлики <span class="visually-hidden">(Поддерживается)</span></li>
-          <li class="price__list-item price__list-item--unsupported">Комментарии <span class="visually-hidden">(Не
-              поддерживается)</span></li>
-        </ul>
-      </div>
-      <div class="price__item slider__item">
-        <div class="price__text-fields">
-          <p class="price__title">Анлим</p>
-          <p class="price__cost">9,99 USD</p>
+        <div class="price__item slider__item">
+          <div class="price__text-fields">
+            <p class="price__title">Анлим</p>
+            <p class="price__cost">9,99 USD</p>
+          </div>
+          <ul class="price__list slider__list">
+            <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--supported">Смайлики <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--supported">Комментарии <span class="visually-hidden">(Поддерживается)</span></li>
+          </ul>
         </div>
-        <ul class="price__list slider__list">
-          <li class="price__list-item price__list-item--supported">Розовый фильтр <span class="visually-hidden">(Поддерживается)</span></li>
-          <li class="price__list-item price__list-item--supported">Смайлики <span class="visually-hidden">(Поддерживается)</span></li>
-          <li class="price__list-item price__list-item--supported">Комментарии <span class="visually-hidden">(Поддерживается)</span></li>
-        </ul>
       </div>
       <p class="slider__toggles-wrapper">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle" type="button" aria-label="Первая карточка"></button>
+        <button class="slider__toggle slider__toggle--active" type="button" aria-label="Вторая карточка"></button>
+        <button class="slider__toggle" type="button" aria-label="Третья карточка"></button>
       </p>
     </section>
   </main>
@@ -142,6 +147,7 @@
   <footer class="main-footer">
     <p class="main-footer__slogan">Остались вопросы? Свяжитесь с&nbsp;нами!</p>
     <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
       <dl class="contacts__list">
         <div class="contacts__item">
           <dt class="contacts__title">Звоните:</dt>
@@ -153,11 +159,12 @@
         </div>
         <div class="contacts__item">
           <dt class="contacts__title">Приезжайте в&nbsp;гости:</dt>
-          <dd class="contacts__text">ул. Большая Конюшенная, 19/8</dd>
+          <dd class="contacts__text">ул. Большая<br> Конюшенная, 19/8</dd>
         </div>
       </dl>
     </section>
     <section class="map">
+      <h2 class="visually-hidden">Наше местоположение</h2>
     </section>
   </footer>
 </body>
