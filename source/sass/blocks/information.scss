@@ -1,0 +1,41 @@
+.information {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .information {
+    display: block;
+    background-image: url("../../img/icon-timer.svg");
+    background-repeat: no-repeat;
+  }
+
+  .information p {
+    padding-left: 310px;
+    color: #283645;
+  }
+
+  .information a {
+    padding-left: 310px;
+  }
+
+  .information__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .information__text {
+    line-height: 1.71;
+  }
+
+  .information__link {
+    color: #d22856;
+    line-height: 1.71;
+  }
+}
+
+@media (min-width: 960px) {
+  .information {
+    background-color: #f2f2f2;
+  }
+}

@@ -33,7 +33,7 @@
       <section class="publications">
         <h3 class="visually-hidden">Последние публикации</h3>
 
-        <article class="publications__item publication-post">
+        <article class="publications__item publications__item--panorama publication-post">
           <img class="publication-post__photo publication-post__photo--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография Анны">
           <p class="publication-post__user">Анна <time class="publication-post__time" datetime="2018-07-15">(5 минут назад)</time></p>
           <p class="publication-post__text">Прыгать или нет? Напишите в&nbsp;коментарии свой совет и&nbsp;смотрите
@@ -99,15 +99,17 @@
         <p class="upload__slogan">Затмите их&nbsp;всех! Выкладывайте все, что накопилось в&nbsp;телефоне!</p>
         <img class="upload__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография для загрузки">
         <div class="upload__filters image-filters">
-          <a class="image-filters__item" href="#" aria-label="Элемент редактора изображения «Обрезать»"><span class="visually-hidden">Обрезать</span></a>
-          <a class="image-filters__item" href="#" aria-label="Элемент редактора изображения «Заливка»"><span class="visually-hidden">Заливка</span></a>
-          <a class="image-filters__item" href="#" aria-label="Элемент редактора изображения «Контраст»"><span class="visually-hidden">Контраст</span></a>
+          <ul class="upload__list">
+            <li class="upload__item upload__item--cut"><a class="image-filters__item" href="#" aria-label="Элемент редактора изображения «Обрезать»"><span class="visually-hidden">Обрезать</span></a></li>
+            <li class="upload__item upload__item--fill"><a class="image-filters__item" href="#" aria-label="Элемент редактора изображения «Заливка»"><span class="visually-hidden">Заливка</span></a></li>
+            <li class="upload__item upload__item--contrast"><a class="image-filters__item" href="#" aria-label="Элемент редактора изображения «Контраст»"><span class="visually-hidden">Контраст</span></a></li>
+          </ul>
           <div class="image-filters__scale-bar">
             <div class="image-filters__toggle"></div>
           </div>
+          <button class="button upload__button upload__button--send" type="submit">Запостить</button>
+          <button class="button upload__button upload__button--cancel" type="reset">Отмена</button>
         </div>
-        <button class="button upload__button upload__button--send" type="submit">Запостить</button>
-        <button class="button upload__button upload__button--cancel" type="reset">Отмена</button>
       </form>
     </section>
   </main>
@@ -117,14 +119,14 @@
       <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип «Pink»">
     </a>
     <ul class="socials">
-      <li class="socials__item"><a class="socials__link" href="#" aria-label="Иконка социальной сети «Twitter»"></a></li>
-      <li class="socials__item"><a class="socials__link" href="#" aria-label="Иконка социальной сети «Facebook»"></a></li>
-      <li class="socials__item"><a class="socials__link" href="#" aria-label="Иконка социальной сети «YouTube»"></a></li>
+      <li class="socials__item socials__item--twitter"><a class="socials__link" href="#" aria-label="Иконка социальной сети «Twitter»"></a></li>
+      <li class="socials__item socials__item--facebook"><a class="socials__link" href="#" aria-label="Иконка социальной сети «Facebook»"></a></li>
+      <li class="socials__item socials__item--youtube"><a class="socials__link" href="#" aria-label="Иконка социальной сети «YouTube»"></a></li>
     </ul>
     <p class="alt-footer__copyright">
       Разработано
       <a class="alt-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="alt-footer__logo" src="img/htmlacademy.svg" width="60" height="60" alt="HTML Academy">
+        <img class="alt-footer__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
       </a>
     </p>
   </footer>

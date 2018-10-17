@@ -1,4 +1,6 @@
 .review__item {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin-left: 0;
   margin-right: 0;
@@ -11,7 +13,22 @@
   line-height: 1.67;
 }
 
+.review__title-info {
+  display: none;
+  line-height: 2.14;
+}
+
 .review__text {
   color: #283645;
   line-height: 2.14;
+}
+
+@media (min-width: 660px) {
+  .review__user {
+    order: 1;
+  }
+
+  .review__title-info {
+    display: block;
+  }
 }

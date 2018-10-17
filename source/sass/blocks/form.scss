@@ -35,3 +35,17 @@
   line-height: 1.67;
   text-transform: uppercase;
 }
+
+@media (min-width: 660px) {
+  .form__set {
+    border: 2px solid #e5e5e5;
+
+    &:first-child {
+      border: none;
+    }
+
+    &:nth-child(2n) {
+      background-color: #ffffff;
+    }
+  }
+}

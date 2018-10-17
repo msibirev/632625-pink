@@ -2,16 +2,12 @@
   background-color: #1d2631;
 }
 
-.download-information__button {
+.download-information__slogan {
+  display: none;
+  text-align: center;
   color: #ffffff;
-  border-color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  padding-top: 20px;
-  padding-bottom: 17px;
-  padding-left: 40px;
-  padding-right: 39px;
+  font-size: 40px;
+  font-weight: 300;
 }
 
 .download-information__icons {
@@ -23,4 +19,15 @@
   color: #ffffff;
   line-height: 1.71;
   text-align: center;
+}
+
+@media (min-width: 660px) {
+  .download-information {
+    background-color: transparent;
+    width: 320px;
+  }
+
+  .download-information__slogan {
+    display: block;
+  }
 }

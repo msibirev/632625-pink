@@ -20,3 +20,15 @@
     margin-right: 19px;
   }
 }
+
+@media (min-width: 660px) {
+  .slider__price {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider__review {
+    display: none;
+  }
+}

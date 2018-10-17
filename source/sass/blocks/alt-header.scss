@@ -10,3 +10,19 @@
   font-weight: 300;
   text-align: center;
 }
+
+@media (min-width: 660px) {
+  .alt-header {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
+
+  .alt-header__title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 960px) {
+  .alt-header {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+  }
+}

@@ -22,3 +22,21 @@
   text-decoration: none;
   color: #d22856;
 }
+
+@media (min-width: 660px) {
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item:nth-child(3) {
+    width: 500px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contacts__item:nth-child(3) {
+    width: auto;
+  }
+}
