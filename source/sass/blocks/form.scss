@@ -1,3 +1,8 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__set {
   border: none;
   margin: 0;
@@ -34,4 +39,50 @@
   font-weight: 700;
   line-height: 1.67;
   text-transform: uppercase;
+}
+
+@media (min-width: 660px) {
+  .form {
+    align-items: center;
+  }
+
+  .form__set {
+    width: 620px;
+    border: 2px solid #e5e5e5;
+
+    &:first-child {
+      order: -3;
+      border: none;
+    }
+
+    &:nth-child(3) {
+      order: -1;
+    }
+
+    &:nth-child(4) {
+      order: -2;
+    }
+
+    &:nth-child(2n) {
+      background-color: #ffffff;
+    }
+  }
+
+  .form__set-title {
+    text-align: center;
+  }
+}
+
+@media (min-width: 960px) {
+  .form__set {
+    width: 940px;
+
+    &:first-child {
+      width: 400px;
+    }
+
+    &:nth-child(4) {
+      width: 400px;
+    }
+  }
 }

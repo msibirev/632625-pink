@@ -2,17 +2,26 @@
   background-color: #f2f2f2;
 }
 
+.price__item-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.price__item {
+  min-width: 280px;
+}
+
 .price__text-fields {
   padding-top: 23px;
   padding-bottom: 23px;
   background-color: #283645;
   color: #ffffff;
-  line-height: 30px;
   text-transform: uppercase;
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
 
   &--hit {
+    position: relative;
     background-image: url("../../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-size: 74px 73px;
@@ -28,6 +37,10 @@
 }
 
 .price__text {
+  position: absolute;
+  right: 87%;
+  top: 14%;
+  transform: rotate(-45deg);
   line-height: 2.12;
 }
 
@@ -43,11 +56,15 @@
 .price__list {
   list-style: none;
   text-transform: uppercase;
-  line-height: 30px;
+  line-height: 2.14;
   color: #283645;
   background-color: #ffffff;
   padding-left: 0;
   margin: 0;
+
+  &:first-child {
+    display: none;
+  }
 }
 
 .price__list-item {
@@ -56,7 +73,7 @@
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   background-repeat: no-repeat;
-  background-position-x: 270px;
+  background-position-x: 230px;
   background-position-y: center;
 
   &--supported {
@@ -67,5 +84,38 @@
   &--unsupported {
     background-image: url("../../img/icon-no.svg");
     background-size: 27px 26px;
+  }
+}
+
+@media (min-width: 660px) {
+  .price__item {
+    min-width: 155px;
+  }
+
+  .price__list:first-child {
+    display: block;
+  }
+
+  .price__list-item {
+    background-position-x: center;
+  }
+
+  .price__list-text {
+    display: none;
+  }
+
+  .price__text-fields {
+    padding-top: 19px;
+    padding-bottom: 13px;
+  }
+
+  .price__title {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+
+  .price__cost {
+    font-size: 18px;
+    line-height: 1.67;
   }
 }

@@ -1,3 +1,25 @@
 .alt-footer__copyright {
+  position: relative;
   line-height: 1.29;
+}
+
+.alt-footer__logo {
+  position: absolute;
+  bottom: -50%;
+  left: 14%;
+}
+
+@media (min-width: 660px) {
+  .alt-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .alt-footer__copyright {
+    margin-top: 58px;
+  }
+
+  .alt-footer__logo {
+    left: 100%;
+  }
 }
