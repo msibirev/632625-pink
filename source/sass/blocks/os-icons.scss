@@ -1,23 +1,28 @@
 .os-icons {
   display: flex;
-  justify-content: space-around;
 }
 
-
 .os-icons__item {
+  cursor: pointer;
   background-repeat: no-repeat;
   width: 47px;
   height: 56px;
 
   &--apple {
+    margin-left: 37px;
+    margin-top: 2px;
     background-image: url("../../img/logo-apple.svg");
   }
 
   &--android {
+    margin-left: 35px;
+    margin-top: 10px;
     background-image: url("../../img/logo-android.svg");
   }
 
   &--microsoft {
+    margin-left: 32px;
+    margin-top: 13px;
     background-image: url("../../img/logo-microsoft.svg");
   }
 }

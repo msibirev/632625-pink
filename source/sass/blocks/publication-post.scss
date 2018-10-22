@@ -1,10 +1,19 @@
 .publication-post {
   color: #283645;
   line-height: 1.71;
+  margin-bottom: 18px;
+}
+
+.publication-post__photo--panorama {
+  position: relative;
+  left: -7%;
 }
 
 .publication-post__user {
   font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: -12px;
+  margin-left: 17px;
 }
 
 .publication-post__time {
@@ -12,13 +21,26 @@
 }
 
 .publication-post__text {
-  font-size: 12px;
+  margin-left: 17px;
 }
 
 .publication-post__likes {
+  position: relative;
+  margin-left: 49px;
+  padding-bottom: 19px;
   color: #d22856;
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -31px;
+    background-image: url("../../img/icon-heart.svg");
+    width: 13px;
+    height: 12px;
+  }
 }

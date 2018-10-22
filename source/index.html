@@ -11,20 +11,39 @@
 <body class="main-body">
   <h1 class="visually-hidden">Главная страница</h1>
   <header class="main-header">
-    <div class="container">
-      <nav class="main-navigation">
+    <nav class="main-navigation">
+      <div class="main-navigation__container">
         <a class="logo">
           <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип «Pink»">
         </a>
-        <button class="main-navigation__button" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
+        <button class="main-navigation__button" type="button">
+          <span class="visually-hidden">Открыть/закрыть</span>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007"
+            xml:space="preserve">
+            <g id="miu">
+              <g id="editor_list_view_hambuger_menu_glyph">
+                <g>
+                  <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
+                </g>
+                <g>
+                  <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item"><a>Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
           <li class="site-list__item"><a href="form.html">Конкурс</a></li>
           <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
         </ul>
-      </nav>
-      <section class="download-information">
+      </div>
+    </nav>
+    </nav>
+    <section class="download-information">
+      <div class="download-information__container">
         <h2 class="visually-hidden">Информация о скачивании</h2>
         <p class="download-information__slogan">Взгляните на жизнь иначе!</p>
         <a class="button download-information__button" href="#">Скачать приложение</a>
@@ -41,19 +60,19 @@
         </ul>
         <p class="download-information__text">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X,
           Windows&nbsp;8</p>
-      </section>
-    </div>
+      </div>
+    </section>
   </header>
 
   <main class="main-content">
-    <div class="container">
-      <section class="about-us">
-        <h2 class="visually-hidden">О нас</h2>
-        <div class="about-us__slogan">
-          <p class="about-us__text">Устали от&nbsp;серости мегаполиса?</p>
-          <p class="about-us__text">Нам есть, что вам предложить!</p>
-        </div>
-        <ul class="about-us__advantages advantages-list">
+    <section class="about-us">
+      <h2 class="visually-hidden">О нас</h2>
+      <div class="about-us__slogan">
+        <p class="about-us__text">Устали от&nbsp;серости мегаполиса?</p>
+        <p class="about-us__text">Нам есть, что вам предложить!</p>
+      </div>
+      <ul class="about-us__advantages advantages-list">
+        <div class="advantages-list__container">
           <li class="advantages-list__item">
             <p class="advantages-list__title">Поднимает настроение</p>
             <p class="advantages-list__text">Приложение позволит вам победить осеннюю хандру и&nbsp;
@@ -66,117 +85,128 @@
           </li>
           <li class="advantages-list__item">
             <p class="advantages-list__title">Заводит новых друзей</p>
-            <p class="advantages-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и&nbsp;
+            <p class="advantages-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями
+              и&nbsp;
               заводите новых</p>
           </li>
-        </ul>
-      </section>
-
-      <section class="information">
-        <p class="information__title">Эффект<br>на&nbsp;24&nbsp;часа!</p>
-        <p class="information__text">Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-        <a class="information__link" href="#">Узнать больше об исследовании</a>
-      </section>
-
-      <section class="review slider">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <div class="review__list slider__list">
-          <blockquote class="review__item slider__item">
-            <div class="review__user">
-              <cite class="review__title">Николай Петров</cite>
-              <p class="review__title-info">25 лет, водитель трамвая</p>
-            </div>
-            <p class="review__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому
-              взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей
-              женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
-          </blockquote>
-          <blockquote class="review__item slider__item">
-            <div class="review__user">
-              <cite class="review__title">Иван Семёнов</cite>
-              <p class="review__title-info">45 лет, водитель звездолёта</p>
-            </div>
-            <p class="review__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому
-                  взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей
-                  женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
-          </blockquote>
-          <blockquote class="review__item slider__item">
-            <div class="review__user">
-              <cite class="review__title">Михаил Светлов</cite>
-              <p class="review__title-info">35 лет, человек и пароход</p>
-            </div>
-            <p class="review__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому
-                взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей
-                женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
-          </blockquote>
         </div>
-        <p class="slider__toggles-wrapper slider__review">
-          <button class="slider__toggle slider__toggle--active" type="button" aria-label="Первая карточка"></button>
-          <button class="slider__toggle" type="button" aria-label="Вторая карточка"></button>
-          <button class="slider__toggle" type="button" aria-label="Третья карточка"></button>
-        </p>
-      </section>
+      </ul>
+    </section>
 
-      <section class="price slider">
-        <h2 class="visually-hidden">Информация о подписке</h2>
-        <div class="price__item-wrapper">
-          <div class="price__item slider__item">
-            <ul class="price__list slider__list">
-              <li class="price__list-item">Розовый фильтр</li>
-              <li class="price__list-item">Смайлики</li>
-              <li class="price__list-item">Комментарии</li>
-            </ul>
+    <section class="information">
+      <p class="information__title">Эффект<br>на&nbsp;24&nbsp;часа!</p>
+      <p class="information__text">Британские ученые провели исследования и&nbsp;доказали, что положительный эффект
+        от&nbsp;использования приложения длится целые сутки!</p>
+      <a class="information__link" href="#">Узнать больше об исследовании</a>
+    </section>
+
+    <section class="review slider">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <div class="review__list slider__list">
+        <blockquote class="review__item slider__item">
+          <div class="review__user">
+            <cite class="review__title">Николай Петров</cite>
+            <p class="review__title-info">25 лет, водитель трамвая</p>
           </div>
-          <div class="price__item slider__item">
-            <div class="price__text-fields">
-              <p class="price__title">База</p>
-              <p class="price__cost">1,99 USD</p>
-            </div>
-            <ul class="price__list slider__list">
-              <li class="price__list-item price__list-item--supported"><span class="price__list-text">Розовый фильтр</span> <span class="visually-hidden">(Поддерживается)</span></li>
-              <li class="price__list-item price__list-item--unsupported"><span class="price__list-text">Смайлики</span> <span class="visually-hidden">(Не
-                  поддерживается)</span></li>
-              <li class="price__list-item price__list-item--unsupported"><span class="price__list-text">Комментарии</span> <span class="visually-hidden">(Не
-                  поддерживается)</span></li>
-            </ul>
+          <p class="review__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому
+            взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей
+            женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+        </blockquote>
+        <blockquote class="review__item slider__item">
+          <div class="review__user">
+            <cite class="review__title">Иван Семёнов</cite>
+            <p class="review__title-info">45 лет, водитель звездолёта</p>
           </div>
-          <div class="price__item slider__item price__item">
-            <div class="price__text-fields price__text-fields--hit">
-              <p class="price__title">Стандарт</p>
-              <div class="price__text">Хит</div>
-              <p class="price__cost">3,99 USD</p>
-            </div>
-            <ul class="price__list slider__list">
-              <li class="price__list-item price__list-item--supported"><span class="price__list-text">Розовый фильтр</span> <span class="visually-hidden">(Поддерживается)</span></li>
-              <li class="price__list-item price__list-item--supported"><span class="price__list-text">Смайлики</span> <span class="visually-hidden">(Поддерживается)</span></li>
-              <li class="price__list-item price__list-item--unsupported"><span class="price__list-text">Комментарии</span> <span class="visually-hidden">(Не
-                  поддерживается)</span></li>
-            </ul>
+          <p class="review__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому
+            взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей
+            женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+        </blockquote>
+        <blockquote class="review__item slider__item">
+          <div class="review__user">
+            <cite class="review__title">Михаил Светлов</cite>
+            <p class="review__title-info">35 лет, человек и пароход</p>
           </div>
-          <div class="price__item slider__item">
-            <div class="price__text-fields">
-              <p class="price__title">Анлим</p>
-              <p class="price__cost">9,99 USD</p>
-            </div>
-            <ul class="price__list slider__list">
-              <li class="price__list-item price__list-item--supported"><span class="price__list-text">Розовый фильтр</span> <span class="visually-hidden">(Поддерживается)</span></li>
-              <li class="price__list-item price__list-item--supported"><span class="price__list-text">Смайлики</span> <span class="visually-hidden">(Поддерживается)</span></li>
-              <li class="price__list-item price__list-item--supported"><span class="price__list-text">Комментарии</span> <span class="visually-hidden">(Поддерживается)</span></li>
-            </ul>
-          </div>
+          <p class="review__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому
+            взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей
+            женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+        </blockquote>
+      </div>
+      <p class="slider__toggles-wrapper slider__review">
+        <button class="slider__toggle slider__toggle--active" type="button" aria-label="Первая карточка"></button>
+        <button class="slider__toggle" type="button" aria-label="Вторая карточка"></button>
+        <button class="slider__toggle" type="button" aria-label="Третья карточка"></button>
+      </p>
+    </section>
+
+    <section class="price slider">
+      <h2 class="visually-hidden">Информация о подписке</h2>
+      <div class="price__item-wrapper">
+        <div class="price__item slider__item">
+          <ul class="price__list slider__list">
+            <li class="price__list-item">Розовый фильтр</li>
+            <li class="price__list-item">Смайлики</li>
+            <li class="price__list-item">Комментарии</li>
+          </ul>
         </div>
-        <p class="slider__toggles-wrapper slider__price">
-          <button class="slider__toggle" type="button" aria-label="Первая карточка"></button>
-          <button class="slider__toggle slider__toggle--active" type="button" aria-label="Вторая карточка"></button>
-          <button class="slider__toggle" type="button" aria-label="Третья карточка"></button>
-        </p>
-      </section>
-    </div>
+        <div class="price__item slider__item">
+          <div class="price__text-fields">
+            <p class="price__title">База</p>
+            <p class="price__cost">1,99 USD</p>
+          </div>
+          <ul class="price__list slider__list">
+            <li class="price__list-item price__list-item--supported"><span class="price__list-text">Розовый фильтр</span>
+              <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--unsupported"><span class="price__list-text">Смайлики</span>
+              <span class="visually-hidden">(Не
+                поддерживается)</span></li>
+            <li class="price__list-item price__list-item--unsupported"><span class="price__list-text">Комментарии</span>
+              <span class="visually-hidden">(Не
+                поддерживается)</span></li>
+          </ul>
+        </div>
+        <div class="price__item slider__item price__item">
+          <div class="price__text-fields price__text-fields--hit">
+            <p class="price__title">Стандарт</p>
+            <div class="price__text">Хит</div>
+            <p class="price__cost">3,99 USD</p>
+          </div>
+          <ul class="price__list slider__list">
+            <li class="price__list-item price__list-item--supported"><span class="price__list-text">Розовый фильтр</span>
+              <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--supported"><span class="price__list-text">Смайлики</span>
+              <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--unsupported"><span class="price__list-text">Комментарии</span>
+              <span class="visually-hidden">(Не
+                поддерживается)</span></li>
+          </ul>
+        </div>
+        <div class="price__item slider__item">
+          <div class="price__text-fields">
+            <p class="price__title">Анлим</p>
+            <p class="price__cost">9,99 USD</p>
+          </div>
+          <ul class="price__list slider__list">
+            <li class="price__list-item price__list-item--supported"><span class="price__list-text">Розовый фильтр</span>
+              <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--supported"><span class="price__list-text">Смайлики</span>
+              <span class="visually-hidden">(Поддерживается)</span></li>
+            <li class="price__list-item price__list-item--supported"><span class="price__list-text">Комментарии</span>
+              <span class="visually-hidden">(Поддерживается)</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="slider__toggles-wrapper slider__price">
+        <button class="slider__toggle" type="button" aria-label="Первая карточка"></button>
+        <button class="slider__toggle slider__toggle--active" type="button" aria-label="Вторая карточка"></button>
+        <button class="slider__toggle" type="button" aria-label="Третья карточка"></button>
+      </p>
+    </section>
   </main>
 
   <footer class="main-footer">
-    <div class="container">
-      <p class="main-footer__slogan">Остались вопросы? Свяжитесь с&nbsp;нами!</p>
-      <section class="contacts">
+    <section class="contacts">
+      <div class="contacts__container">
+        <p class="contacts__slogan">Остались вопросы? Свяжитесь с&nbsp;нами!</p>
         <h2 class="visually-hidden">Контакты</h2>
         <dl class="contacts__list">
           <div class="contacts__item">
@@ -192,27 +222,29 @@
             <dd class="contacts__text">ул. Большая<br> Конюшенная, 19/8</dd>
           </div>
         </dl>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Наше местоположение</h2>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Наше местоположение</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb37fb6794cfbf19a75e6eee015f166b6eb57aa30c7200e0e7ca1dd0c50796cb&amp;source=constructor"
+        width="660" height="645" frameborder="0"></iframe>
+    </section>
     <section class="alt-footer main-footer__alt">
-        <a class="alt-footer-logo" href="index.html">
-          <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип «Pink»">
+      <a class="alt-footer-logo" href="index.html">
+        <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип «Pink»">
+      </a>
+      <ul class="socials">
+        <li class="socials__item socials__item--twitter"><a class="socials__link" href="#" aria-label="Иконка социальной сети «Twitter»"></a></li>
+        <li class="socials__item socials__item--facebook"><a class="socials__link" href="#" aria-label="Иконка социальной сети «Facebook»"></a></li>
+        <li class="socials__item socials__item--youtube"><a class="socials__link" href="#" aria-label="Иконка социальной сети «YouTube»"></a></li>
+      </ul>
+      <p class="alt-footer__copyright">
+        Разработано
+        <a class="alt-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="alt-footer__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
-        <ul class="socials">
-          <li class="socials__item socials__item--twitter"><a class="socials__link" href="#" aria-label="Иконка социальной сети «Twitter»"></a></li>
-          <li class="socials__item socials__item--facebook"><a class="socials__link" href="#" aria-label="Иконка социальной сети «Facebook»"></a></li>
-          <li class="socials__item socials__item--youtube"><a class="socials__link" href="#" aria-label="Иконка социальной сети «YouTube»"></a></li>
-        </ul>
-        <p class="alt-footer__copyright">
-          Разработано
-          <a class="alt-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="alt-footer__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
-        </p>
-      </section>
+      </p>
+    </section>
   </footer>
 </body>
 

@@ -2,14 +2,28 @@
   display: flex;
   justify-content: space-between;
   width: 200px;
-  padding: 0;
+  margin-top: 36px;
+  padding: 0 12px;
   list-style: none;
 }
 
 .socials__item {
+  cursor: pointer;
   background-repeat: no-repeat;
-  width: 18px;
-  height: 18px;
+  background-position: center center;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   &--twitter {
     background-image: url("../../img/icon-twitter.svg");

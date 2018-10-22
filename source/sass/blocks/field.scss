@@ -1,15 +1,21 @@
 .field {
   display: block;
+  margin-bottom: 17px;
 }
 
 .field__name {
+  margin-left: 22px;
   color: #d22856;
   line-height: 2.14;
   text-transform: uppercase;
 }
 
 .field__input {
+  width: 280px;
+  height: 63px;
   color: #283645;
   font-size: 18px;
   line-height: 1.67;
+  margin-top: 6px;
+  padding-left: 20px;
 }
