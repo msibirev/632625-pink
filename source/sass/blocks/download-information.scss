@@ -1,5 +1,12 @@
 .download-information {
   background-color: #1d2631;
+  margin-top: 397px;
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.download-information__container {
+  @include mobile-container;
 }
 
 .download-information__slogan {
@@ -10,12 +17,30 @@
   font-weight: 300;
 }
 
+.download-information__button {
+  width: 280px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
 .download-information__icons {
+  margin-top: 32px;
   list-style: none;
   padding: 0;
 }
 
 .download-information__text {
+  width: 280px;
+  margin-top: -3px;
+  margin-bottom: 0;
   color: #ffffff;
   line-height: 1.71;
   text-align: center;

@@ -1,8 +1,8 @@
 .alt-footer-logo {
-  margin-top: 64px;
+  margin-top: 41px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .alt-footer-logo {
     margin-top: 34px;
   }

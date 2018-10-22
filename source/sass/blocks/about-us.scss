@@ -1,10 +1,18 @@
 .about-us__slogan {
+  @include mobile-container;
   color: #283645;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  padding: 45px 20px 120px;
-  margin: 0;
+  padding-top: 18px;
+  padding-right: 40px;
+  padding-bottom: 78px;
+}
+
+.about-us__text {
+  &:nth-child(2) {
+    margin-top: 32px;
+  }
 }
 
 .about-us__advantages {

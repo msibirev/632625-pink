@@ -1,9 +1,12 @@
-.review__item {
+.review__list {
   display: flex;
-  flex-direction: column;
+  padding-top: 28px;
+}
+
+.review__item {
+  min-width: 280px;
+  margin: 0 20px;
   text-align: center;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .review__title {
@@ -19,8 +22,9 @@
 }
 
 .review__text {
+  margin-top: 14px;
   color: #283645;
-  line-height: 2.14;
+  line-height: 2.15;
 }
 
 @media (min-width: 660px) {

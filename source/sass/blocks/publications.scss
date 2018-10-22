@@ -1,8 +1,12 @@
+.publications {
+  @include mobile-container;
+}
+
 .publications__item {
   background-color: #f2f2f2;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .publications {
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +21,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .publications__item--panorama {
     width: 940px;
   }

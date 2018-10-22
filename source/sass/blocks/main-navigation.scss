@@ -1,22 +1,37 @@
 .main-navigation {
+  width: 320px;
+  padding-bottom: 18px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.main-navigation__container {
+  @include mobile-container;
+}
+
 .main-navigation__list {
+  display: none;
   background-color: #283645;
   padding: 0;
   text-align: center;
 }
 
 .main-navigation__button {
-  position: absolute;
-  top: 22px;
-  right: 20px;
-  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 151px;
   border: none;
-  background-image: url("../../img/icon-menu-burger.svg");
-  width: 50px;
-  height: 24px;
+  background-color: inherit;
+}
+
+.main-navigation__button path {
+  &:hover,
+  &:focus {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba(210, 40, 86, 0.3);
+  }
 }
 
 @media (min-width: 960px) {
