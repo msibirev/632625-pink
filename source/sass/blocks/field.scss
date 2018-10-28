@@ -19,3 +19,22 @@
   margin-top: 6px;
   padding-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .field {
+    margin-bottom: 46px;
+  }
+
+  .field__name {
+    margin-left: -1px;
+    margin-right: 16px;
+  }
+
+  .field__input {
+    width: 524px;
+
+    &--name:nth-child(2) {
+      width: 565px;
+    }
+  }
+}

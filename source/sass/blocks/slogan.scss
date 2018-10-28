@@ -10,4 +10,25 @@
   &--form-slogan {
     padding: 46px 15px 36px;
   }
+
+  &--additional-slogan {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slogan {
+    @include tablet-container;
+    font-size: 18px;
+    line-height: 1.67;
+    padding: 92px 45px 76px;
+
+    &--form-slogan {
+      padding: 92px 49px 65px;
+    }
+
+    &--additional-slogan {
+      display: block;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 .main-navigation {
-  width: 320px;
+  margin: auto;
   padding-bottom: 18px;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -34,10 +34,30 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $tablet-width) {
   .main-navigation {
+    padding-bottom: 39px;
+  }
+
+  .main-navigation__container {
+    @include tablet-container;
+  }
+
+  .main-navigation__button {
+    margin-left: 491px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    padding-bottom: 17px;
+  }
+
+  .main-navigation__container {
+    @include desktop-container;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   .main-navigation__list {

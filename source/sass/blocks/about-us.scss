@@ -5,13 +5,14 @@
   font-weight: 300;
   text-align: center;
   padding-top: 18px;
-  padding-right: 40px;
-  padding-bottom: 78px;
+  padding-right: 20px;
+  padding-bottom: 0;
 }
 
 .about-us__text {
   &:nth-child(2) {
-    margin-top: 32px;
+    margin-top: 33px;
+    padding: 0 20px;
   }
 }
 
@@ -20,8 +21,39 @@
   padding-left: 0;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .about-us__slogan {
+    @include tablet-container;
     font-size: 40px;
+    margin-bottom: -31px;
+  }
+
+  .about-us__text {
+    &:first-child {
+      margin-top: 35px;
+    }
+
+    &:nth-child(2) {
+      margin-top: -38px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__slogan {
+    @include desktop-container;
+    font-size: 50px;
+    margin-bottom: 92px;
+  }
+
+  .about-us__text {
+    &:first-child {
+      margin-top: -46px;
+    }
+
+    &:nth-child(2) {
+      margin-top: -46px;
+      padding: 0 107px;
+    }
   }
 }

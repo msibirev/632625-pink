@@ -32,16 +32,29 @@
 
 @media (min-width: $tablet-width) {
   .alt-footer {
-    display: flex;
-    justify-content: space-around;
+    @include tablet-container;
+    flex-direction: row;
   }
 
   .alt-footer__copyright {
-    margin-top: 50px;
+    padding-top: 46px;
   }
 
   .alt-footer__logo {
-    bottom: 8px;
-    left: 102%;
+    left: 97px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .alt-footer {
+    @include desktop-container;
+  }
+
+  .alt-footer__copyright {
+    font-size: 18px;
+  }
+
+  .alt-footer__logo {
+    left: 120px;
   }
 }

@@ -38,8 +38,9 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .socials {
-    margin-top: 58px;
+    margin-top: 50px;
+    margin-left: -16px;
   }
 }

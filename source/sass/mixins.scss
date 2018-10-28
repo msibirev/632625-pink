@@ -3,3 +3,15 @@
   margin: auto;
   padding: 0 20px;
 }
+
+@mixin tablet-container {
+  width: 660px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+@mixin desktop-container {
+  width: 960px;
+  margin: auto;
+  padding: 0 10px;
+}

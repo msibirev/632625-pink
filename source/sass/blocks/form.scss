@@ -1,13 +1,11 @@
 .form {
-  @include mobile-container;
   display: flex;
   flex-direction: column;
 }
 
 .form__set {
+  @include mobile-container;
   border: none;
-  margin: 0;
-  padding: 0;
   padding-bottom: 25px;
 
   &:nth-child(2n) {
@@ -59,6 +57,7 @@
 }
 
 .form__submit {
+  @include mobile-container;
   border-color: #2aab6d;
   border-radius: 0;
   background-color: #2aab6d;
@@ -77,14 +76,15 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .form {
     align-items: center;
   }
 
   .form__set {
-    width: 620px;
+    @include tablet-container;
     border: 2px solid #e5e5e5;
+    margin-bottom: 20px;
 
     &:first-child {
       order: -3;
@@ -109,7 +109,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .form__set {
     width: 940px;
 

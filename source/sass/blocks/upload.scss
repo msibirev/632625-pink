@@ -96,3 +96,25 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .upload__slogan {
+    @include tablet-container;
+    font-size: 18px;
+    line-height: 1.67;
+    padding-top: 68px;
+    padding-bottom: 69px;
+  }
+
+  .upload__form {
+    @include tablet-container;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 52px;
+  }
+
+  .upload__button {
+    width: 260px;
+  }
+}

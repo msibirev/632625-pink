@@ -2,23 +2,57 @@
   display: none;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .information {
     display: block;
-    background-image: url("../../img/icon-timer.svg");
-    background-repeat: no-repeat;
+    padding-top: 45px;
+  }
+
+  .information__container {
+    @include tablet-container;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .information__svg-block {
+    position: relative;
+  }
+
+  .information__picture {
+    width: 238px;
+    height: 276px;
+  }
+
+  .information__border {
+    position: absolute;
+    top: 55px;
+    left: 19px;
+    width: 202px;
+    height: 202px;
+  }
+
+  .information__svg-text {
+    position: absolute;
+    top: 76px;
+    left: 63px;
+    color: #d22856;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1.56;
+  }
+
+  .information__block {
+    width: 311px;
+    padding-top: 7px;
   }
 
   .information p {
-    padding-left: 310px;
     color: #283645;
   }
 
-  .information a {
-    padding-left: 310px;
-  }
-
   .information__title {
+    margin-bottom: -4px;
+    padding-right: 14px;
     font-size: 30px;
     font-weight: 700;
     line-height: 1.2;
@@ -34,8 +68,57 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .information {
+    margin-top: -14px;
+    padding-top: 10px;
     background-color: #f2f2f2;
+  }
+
+  .information__container {
+    @include desktop-container;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .information__svg-block {
+    padding-left: 4px;
+    margin-bottom: 64px;
+  }
+
+  .information__block {
+    width: 572px;
+  }
+
+  .information__picture {
+    width: 298px;
+    height: 345px;
+  }
+
+  .information__border {
+    top: 69px;
+    left: 25px;
+    width: 253px;
+    height: 253px;
+  }
+
+  .information__svg-text {
+    top: 95px;
+    left: 82px;
+    font-size: 120px;
+  }
+
+  .information__title {
+    margin-top: 83px;
+  }
+
+  .information__text {
+    margin-top: 26px;
+    margin-bottom: 31px;
+    font-size: 18px;
+  }
+
+  .information__link {
+    font-size: 18px;
   }
 }

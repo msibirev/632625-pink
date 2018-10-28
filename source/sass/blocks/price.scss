@@ -1,22 +1,20 @@
 .price {
   position: relative;
-  margin-top: 136px;
+  margin-top: 5px;
   background-color: #f2f2f2;
 
   &::before {
     content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    height: 100px;
-    background: linear-gradient(to right bottom, #ffffff 50%, #f2f2f2 50%);
+    display: block;
+    height: 133px;
+    background: linear-gradient(175deg, #ffffff 50%, #f2f2f2 50%);
   }
 }
 
 .price__item-wrapper {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .price__item {
@@ -37,6 +35,8 @@
     background-image: url("../../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-size: 74px 73px;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -84,7 +84,7 @@
   padding-left: 22px;
   border-bottom: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
   background-repeat: no-repeat;
   background-position-x: 230px;
   background-position-y: center;
@@ -100,7 +100,15 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
+  .price {
+    margin-top: -22px;
+  }
+
+  .price__item-wrapper {
+    margin-left: 15px;
+  }
+
   .price__item {
     min-width: 155px;
   }
@@ -110,7 +118,11 @@
   }
 
   .price__list-item {
+    padding: 8px;
+    padding-left: 14px;
+    height: 47px;
     background-position-x: center;
+    text-transform: none;
   }
 
   .price__list-text {
@@ -118,8 +130,13 @@
   }
 
   .price__text-fields {
-    padding-top: 19px;
-    padding-bottom: 13px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+
+    &--hit {
+      background-image: url("../../img/bg-hit-tablet.svg");
+      background-size: 61px 61px;
+    }
   }
 
   .price__title {
@@ -127,8 +144,56 @@
     line-height: 1.88;
   }
 
+  .price__text {
+    right: 79%;
+    top: 6%;
+  }
+
   .price__cost {
     font-size: 18px;
     line-height: 1.67;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__item-wrapper {
+    margin-left: 1px;
+    padding-top: 56px;
+    padding-bottom: 96px;
+  }
+
+  .price__item {
+    min-width: 236px;
+  }
+
+  .price__list-item {
+    font-size: 18px;
+    padding: 11px;
+    padding-left: 24px;
+    height: 61px;
+  }
+
+  .price__text-fields {
+    padding-top: 16px;
+    padding-bottom: 14px;
+
+    &--hit {
+      background-image: url("../../img/bg-hit.svg");
+      background-size: 74px 73px;
+    }
+  }
+
+  .price__title {
+    font-size: 18px;
+  }
+
+  .price__text {
+    right: 83%;
+    top: 12%;
+  }
+
+  .price__cost {
+    margin-top: -5px;
+    font-size: 24px;
   }
 }

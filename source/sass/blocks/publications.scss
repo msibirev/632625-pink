@@ -1,14 +1,29 @@
-.publications {
+.publications__container {
   @include mobile-container;
 }
 
 .publications__item {
   background-color: #f2f2f2;
+
+  &--panorama {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.publications__item--panorama picture {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
-  .publications {
+  .publications__container {
+    @include tablet-container;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -22,7 +37,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .publications__item--panorama {
-    width: 940px;
+  .publications__container {
+    @include desktop-container;
+  }
+
+  .publications__item {
+    &--panorama {
+      width: 940px;
+    }
   }
 }

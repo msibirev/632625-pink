@@ -1,6 +1,7 @@
 .alt-header {
   background-color: #1d2631;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 0;
   background-repeat: no-repeat;
 }
 
@@ -24,7 +25,14 @@
   }
 
   .alt-header__title {
+    @include tablet-container;
     font-size: 50px;
+    padding-top: 73px;
+    padding-bottom: 143px;
+
+    &--form-title {
+      padding-bottom: 86px;
+    }
   }
 }
 

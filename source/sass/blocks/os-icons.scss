@@ -26,3 +26,11 @@
     background-image: url("../../img/logo-microsoft.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .os-icons__item {
+    &--apple {
+      margin-left: 47px;
+    }
+  }
+}

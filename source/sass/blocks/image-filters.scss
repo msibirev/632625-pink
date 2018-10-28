@@ -5,6 +5,10 @@
   padding-top: 21px;
   padding-right: 22px;
   padding-left: 18px;
+
+  &--additional {
+    display: none;
+  }
 }
 
 .image-filters__scale {
@@ -35,4 +39,34 @@
   min-width: 320px;
   height: 1px;
   background-color: #dedfe1;
+
+  &--additional {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .image-filters {
+    width: 280px;
+  }
+
+  .image-filters__range {
+    margin-bottom: 14px;
+    padding-top: 19px;
+    padding-right: 18px;
+    padding-left: 60px;
+
+    &--additional {
+      display: block;
+    }
+  }
+
+  .image-filters__hr {
+    left: 5px;
+    width: 275px;
+
+    &--additional {
+      display: block;
+    }
+  }
 }

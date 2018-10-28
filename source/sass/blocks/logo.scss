@@ -1,3 +1,15 @@
 .logo img {
   margin-top: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo img {
+    margin-top: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo img {
+    margin-top: 39px;
+  }
+}
